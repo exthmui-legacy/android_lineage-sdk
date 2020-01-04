@@ -95,7 +95,7 @@
     <string name="permlab_manageRemotePrefs">upravljanje oddaljenih nastavitev</string>
     <string name="permdesc_manageRemotePrefs">Dovoli aplikaciji upravljanje oddaljenih nastavitev</string>
     <string name="build_date">Datum izgradnje</string>
-    <string name="lineage_api_level">Raven LineageOS API-ja</string>
+    <string name="lineage_api_level">Raven exTHmUI API-ja</string>
     <string name="lineage_updates">Posodobitve LineageOS</string>
     <string name="lineage_version">Različica LineageOS</string>
     <string name="lineage_vendor_security_patch">Raven popravkov za varnost proizvajalca</string>
