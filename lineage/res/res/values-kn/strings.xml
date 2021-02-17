@@ -91,9 +91,9 @@
     <string name="permlab_manageRemotePrefs">ಗೆಂಟಂಕೆಯ ಅಳವಡಿಕೆಗಳನ್ನು ನಿರ್ವಹಿಸು</string>
     <string name="permdesc_manageRemotePrefs">ಗೆಂಟಂಕೆ ಅಳವಡಿಕೆಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಅಪ್ಗೆ ಅನುಮತಿಸುತ್ತದೆ</string>
     <string name="build_date">ನಿರ್ಮಾಣ ದಿನಾಂಕ</string>
-    <string name="lineage_api_level">LineageOS API ಮಟ್ಟ</string>
-    <string name="lineage_updates">LineageOS ನವೀಕರಣಗಳು</string>
-    <string name="lineage_version">LineageOS ಆವೃತ್ತಿ</string>
+    <string name="lineage_api_level">exTHmUI API ಮಟ್ಟ</string>
+    <string name="lineage_updates">exTHmUI ನವೀಕರಣಗಳು</string>
+    <string name="lineage_version">exTHmUI ಆವೃತ್ತಿ</string>
     <string name="lineage_vendor_security_patch">Android ಭದ್ರತಾ ತೇಪೆ ಮಟ್ಟ</string>
     <string name="unknown">ಅಜ್ಞಾತ</string>
     <string name="app_killed_message">ತಂತ್ರಾಂಶ ಸತ್ತಿತು</string>

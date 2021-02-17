@@ -91,9 +91,9 @@
     <string name="permlab_manageRemotePrefs">uzaqdan bağlantı tənzimləmələri</string>
     <string name="permdesc_manageRemotePrefs">Tətbiqetməyə uzaqdan bağlantı tənzimləmələrini dəyişdirmək icazəsi verər</string>
     <string name="build_date">Quruluş tarixi</string>
-    <string name="lineage_api_level">LineageOS API səviyyəsi</string>
-    <string name="lineage_updates">LineageOS yeniləmələri</string>
-    <string name="lineage_version">LineageOS versiyası</string>
+    <string name="lineage_api_level">exTHmUI API səviyyəsi</string>
+    <string name="lineage_updates">exTHmUI yeniləmələri</string>
+    <string name="lineage_version">exTHmUI versiyası</string>
     <string name="lineage_vendor_security_patch">Vendor təhlükəsizlik yamaq səviyyəsi</string>
     <string name="unknown">Bilinmir</string>
     <string name="app_killed_message">Tətbiqetmə bağlanıldı</string>

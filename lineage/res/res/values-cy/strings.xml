@@ -91,9 +91,9 @@
     <string name="permlab_manageRemotePrefs">rheoli gosodiadau o bell</string>
     <string name="permdesc_manageRemotePrefs">Mae\'n caniatáu ap i reoli gosodiadau o bell.</string>
     <string name="build_date">Dyddiad adeiledd</string>
-    <string name="lineage_api_level">Lefel API LineageOS</string>
-    <string name="lineage_updates">Diweddariadau LineageOS</string>
-    <string name="lineage_version">Fersiwn LineageOS</string>
+    <string name="lineage_api_level">Lefel API exTHmUI</string>
+    <string name="lineage_updates">Diweddariadau exTHmUI</string>
+    <string name="lineage_version">Fersiwn exTHmUI</string>
     <string name="lineage_vendor_security_patch">Lefel patsh diogelwch gwneuthurwr</string>
     <string name="unknown">Anhysybys</string>
     <string name="app_killed_message">Lladdwyd yr ap</string>

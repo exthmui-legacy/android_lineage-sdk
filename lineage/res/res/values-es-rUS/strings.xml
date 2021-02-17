@@ -91,9 +91,9 @@
     <string name="permlab_manageRemotePrefs">gestionar los ajustes remotos</string>
     <string name="permdesc_manageRemotePrefs">Permite a una aplicación gestionar los ajustes remotos</string>
     <string name="build_date">Fecha de compilación</string>
-    <string name="lineage_api_level">Nivel de API de LineageOS</string>
-    <string name="lineage_updates">Actualizaciones de LineageOS</string>
-    <string name="lineage_version">Versión de LineageOS</string>
+    <string name="lineage_api_level">Nivel de API de exTHmUI</string>
+    <string name="lineage_updates">Actualizaciones de exTHmUI</string>
+    <string name="lineage_version">Versión de exTHmUI</string>
     <string name="lineage_vendor_security_patch">Nivel del parche de seguridad del proveedor</string>
     <string name="unknown">Desconocido</string>
     <string name="app_killed_message">Aplicación finalizada</string>
