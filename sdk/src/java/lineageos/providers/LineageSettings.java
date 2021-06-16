@@ -1058,14 +1058,13 @@ public final class LineageSettings {
          * 7 - Action Sleep
          * 8 - Last app
          * 9 - Toggle split screen
-         * 10 - Single hand (left)
-         * 11 - Single hand (right)
+         * 10 - Kill foreground app
          */
         public static final String KEY_HOME_LONG_PRESS_ACTION = "key_home_long_press_action";
 
         /** @hide */
         public static final Validator KEY_HOME_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Action to perform when the home key is double-tapped.
@@ -1076,7 +1075,18 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_HOME_DOUBLE_TAP_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
+
+        /**
+         * Action to perform when the back key is long-pressed.
+         * (Default can be configured via config_longPressOnBackBehavior)
+         * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
+         */
+        public static final String KEY_BACK_LONG_PRESS_ACTION = "key_back_long_press_action";
+
+        /** @hide */
+        public static final Validator KEY_BACK_LONG_PRESS_ACTION_VALIDATOR =
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Whether to wake the screen with the back key, the value is boolean.
@@ -1125,7 +1135,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_MENU_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Action to perform when the menu key is long-pressed.
@@ -1136,7 +1146,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_MENU_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Action to perform when the assistant (search) key is pressed. (Default is 3)
@@ -1146,7 +1156,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_ASSIST_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Action to perform when the assistant (search) key is long-pressed. (Default is 4)
@@ -1156,7 +1166,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_ASSIST_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Action to perform when the app switch key is pressed. (Default is 2)
@@ -1166,7 +1176,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_APP_SWITCH_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Action to perform when the app switch key is long-pressed. (Default is 0)
@@ -1176,7 +1186,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_APP_SWITCH_LONG_PRESS_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Action to perform when the screen edge is long-swiped. (Default is 0)
@@ -1186,7 +1196,7 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator KEY_EDGE_LONG_SWIPE_ACTION_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 9);
+                new InclusiveIntegerRangeValidator(0, 10);
 
         /**
          * Whether to wake the screen with the home key, the value is boolean.
@@ -1446,9 +1456,11 @@ public final class LineageSettings {
          * Enable looking up of phone numbers of nearby places
          * 0 = 0ff, 1 = on
          */
+        @Deprecated
         public static final String ENABLE_FORWARD_LOOKUP = "enable_forward_lookup";
 
         /** @hide */
+        @Deprecated
         public static final Validator ENABLE_FORWARD_LOOKUP_VALIDATOR =
                 sBooleanValidator;
 
@@ -1456,9 +1468,11 @@ public final class LineageSettings {
          * Enable looking up of phone numbers of people
          * 0 = 0ff, 1 = on
          */
+        @Deprecated
         public static final String ENABLE_PEOPLE_LOOKUP = "enable_people_lookup";
 
         /** @hide */
+        @Deprecated
         public static final Validator ENABLE_PEOPLE_LOOKUP_VALIDATOR =
                 sBooleanValidator;
 
@@ -1466,34 +1480,42 @@ public final class LineageSettings {
          * Enable looking up of information of phone numbers not in the contacts
          * 0 = 0ff, 1 = on
          */
+        @Deprecated
         public static final String ENABLE_REVERSE_LOOKUP = "enable_reverse_lookup";
 
         /** @hide */
+        @Deprecated
         public static final Validator ENABLE_REVERSE_LOOKUP_VALIDATOR =
                 sBooleanValidator;
 
         /**
          * The forward lookup provider to be utilized by the Dialer
          */
+        @Deprecated
         public static final String FORWARD_LOOKUP_PROVIDER = "forward_lookup_provider";
 
         /** @hide */
+        @Deprecated
         public static final Validator FORWARD_LOOKUP_PROVIDER_VALIDATOR = sAlwaysTrueValidator;
 
         /**
          * The people lookup provider to be utilized by the Dialer
          */
+        @Deprecated
         public static final String PEOPLE_LOOKUP_PROVIDER = "people_lookup_provider";
 
         /** @hide */
+        @Deprecated
         public static final Validator PEOPLE_LOOKUP_PROVIDER_VALIDATOR = sAlwaysTrueValidator;
 
         /**
          * The reverse lookup provider to be utilized by the Dialer
          */
+        @Deprecated
         public static final String REVERSE_LOOKUP_PROVIDER = "reverse_lookup_provider";
 
         /** @hide */
+        @Deprecated
         public static final Validator REVERSE_LOOKUP_PROVIDER_VALIDATOR = sAlwaysTrueValidator;
 
         /**
@@ -2151,6 +2173,7 @@ public final class LineageSettings {
          */
         public static final String[] LEGACY_SYSTEM_SETTINGS = new String[]{
                 LineageSettings.System.NAV_BUTTONS,
+                LineageSettings.System.KEY_BACK_LONG_PRESS_ACTION,
                 LineageSettings.System.KEY_HOME_LONG_PRESS_ACTION,
                 LineageSettings.System.KEY_HOME_DOUBLE_TAP_ACTION,
                 LineageSettings.System.BACK_WAKE_SCREEN,
@@ -2279,6 +2302,7 @@ public final class LineageSettings {
             VALIDATORS.put(NAVIGATION_BAR_MENU_ARROW_KEYS,
                     NAVIGATION_BAR_MENU_ARROW_KEYS_VALIDATOR);
             VALIDATORS.put(NAVIGATION_BAR_HINT, NAVIGATION_BAR_HINT_VALIDATOR);
+            VALIDATORS.put(KEY_BACK_LONG_PRESS_ACTION, KEY_BACK_LONG_PRESS_ACTION_VALIDATOR);
             VALIDATORS.put(KEY_HOME_LONG_PRESS_ACTION, KEY_HOME_LONG_PRESS_ACTION_VALIDATOR);
             VALIDATORS.put(KEY_HOME_DOUBLE_TAP_ACTION, KEY_HOME_DOUBLE_TAP_ACTION_VALIDATOR);
             VALIDATORS.put(BACK_WAKE_SCREEN, BACK_WAKE_SCREEN_VALIDATOR);
@@ -2859,10 +2883,8 @@ public final class LineageSettings {
 
         /**
          * String to contain power menu actions
-         * @deprecated
          * @hide
          */
-        @Deprecated
         public static final String POWER_MENU_ACTIONS = "power_menu_actions";
 
         /**
@@ -2989,8 +3011,10 @@ public final class LineageSettings {
 
         /**
          * The hostname for this device
+         * @deprecated
          * @hide
          */
+        @Deprecated
         public static final String DEVICE_HOSTNAME = "device_hostname";
 
         /**
